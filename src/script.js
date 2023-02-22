@@ -44,13 +44,13 @@ function citySubmit(event) {
   let city = document.querySelector("#city").value;
   console.log(city);
 
-  //let selectedCity = document.querySelector("h1");
-  //selectedCity.innerHTML = `${city}`;
-  //search(city);
+  let selectedCity = document.querySelector("h1");
+  selectedCity.innerHTML = `${city}`;
+  search(city);
 }
 
 function showTemperature(response) {
-  document.querySelector("h1").innerHTML = response.data.name;
+  //document.querySelector("h1").innerHTML = response.data.name;
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   console.log(temperature);
