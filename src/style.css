@@ -1,0 +1,37 @@
+body {
+  font-family: "Merriweather", serif;
+
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(161, 255, 206) 0%,
+    rgb(250, 255, 209) 90%
+  );
+}
+
+h1,
+h4 {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  line-height: 1.5;
+}
+h1 {
+  margin-top: 30px;
+}
+h3 {
+  display: inline;
+}
+sup {
+  font-size: 15px;
+}
+h4 {
+  font-weight: 200;
+}
+li {
+  list-style-type: none;
+}
+.sun-icon {
+  font-size: 40px;
+  color: rgb(218, 129, 13);
+  padding: 30px;
+}

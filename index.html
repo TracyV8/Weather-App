@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a2d2a8f8ac.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      
+      <form id="city-search">
+        <input type="text"  placeholder="Enter City Name" id = "city" autofocus ="on" autocomplete="off"/>
+        <input type="submit" value="Search" />
+        <button type="button" class="btn btn-success" id ="location">Location</button>
+      </form>
+       
+    
+      <h1 id = "chosen-city">Perth</h1>
+      <h2> Date </h2>
+      <div class="row">
+        <div class="col"><h3> <span id ="current-temp">34</span> </h3> <span> <sup id = "celcius">°C</sup> </span>
+
+     <i class="fa-regular fa-sun sun-icon"></i>
+      <h6> <span id = "max">36</span> °C <span id = "min">14</span> °C</h6></div>
+      <p id = "description"></p>
+      <div class="col"><ul>
+        <li>
+          Humidity <span id = "humidity"> %</span>
+          </li>
+          <li>
+          pressure <span id = "pressure"></span> mmHg
+          </li>
+          <li>
+          Wind <span id = "wind"></span> km/h
+        </li>
+      </ul>
+
+      </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>
+            Tuesday
+          </h5>
+          <h6>
+            20° 37°
+          </h6>
+    <i class="fa-solid fa-sun solidsun-icon"></i>
+  
+</div>
+<div class="col">
+          <h5>
+            Wednesday
+          </h5>
+          <h6>
+            18° 34°
+          </h6>
+    <i class="fa-solid fa-sun solidsun-icon"></i>
+  
+</div>
+<div class="col">
+          <h5>
+            Thursday
+          </h5>
+          <h6>
+            16° 35°
+          </h6>
+    <i class="fa-solid fa-sun solidsun-icon"></i>
+  
+</div>
+<div class="col">
+          <h5>
+            Friday
+          </h5>
+          <h6>
+            18° 36°
+          </h6>
+    <i class="fa-solid fa-sun solidsun-icon"></i>
+  
+</div>
+<div class="col">
+          <h5>
+            Saturday
+          </h5>
+          <h6>
+            23° 37°
+          </h6>
+    <i class="fa-solid fa-sun solidsun-icon"></i>
+  
+</div>
+        </div>
+      </div>
+    </div>
+    <script
+     src="src/index.js" ></script>
+    </script>
+  </body>
+</html>
